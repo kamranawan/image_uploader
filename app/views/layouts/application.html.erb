@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NewGallery</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <li class="active"><a href="/photos">Photos</a></li> |
+  <li><%= link_to 'Add Photo', new_photo_path %></li>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
